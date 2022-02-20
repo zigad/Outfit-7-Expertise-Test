@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "c11750d7-e94d-44af-828b-cbda5dd13600",
+		"name": "Outfit 7 Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/admin/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"admin",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/admin/players/5634161670881280",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"admin",
+						"players",
+						"5634161670881280"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usage\": 10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1598/admin/players/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"admin",
+						"players",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Game 3\",\n    \"description\": \"Totaly Random Game 3\",\n    \"players\": \"33124, 21242135,5262,112,2\",\n    \"images\": \"[img.jpg]\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1598/admin/players/5632499082330112",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"admin",
+						"players",
+						"5632499082330112"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Player",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usage\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1598/admin/players/5644004762845184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"admin",
+						"players",
+						"5644004762845184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Features",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/services?timezone=Europe/Ljubljana&userId=5644004762845184&cc=US",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"services"
+					],
+					"query": [
+						{
+							"key": "timezone",
+							"value": "Europe/Ljubljana"
+						},
+						{
+							"key": "userId",
+							"value": "5644004762845184"
+						},
+						{
+							"key": "userId",
+							"value": "5642368648740864",
+							"disabled": true
+						},
+						{
+							"key": "cc",
+							"value": "US"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
